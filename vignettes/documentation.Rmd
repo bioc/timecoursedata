@@ -1,0 +1,48 @@
+---
+title: "timecoursedata: Time course gene expression datasets"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteEngine{knitr::knitr}
+    %\VignetteIndexEntry{Installation}
+      %\usepackage[UTF-8]{inputenc}
+---
+
+# timecoursedata: Time course gene expression datasets
+
+## Overview
+
+This package provides time course gene expression datasets. The data included
+in the package and its processing is described below. 
+
+Overviw of the datasets included in timecoursedata:
+
+object | description
+------- | ------------
+`shoemaker2015` | microarray data from influenza-exposed mice
+
+
+## Data structure
+
+Each datasets in this package are represented by:
+
+- a matrix containing the gene expression data
+- a data.frame containing the metadata associated with it
+
+The metadata contains the following information:
+
+column | description
+----- | ----------
+`row.names` | name of the sample
+`Timepoint` | which timepoints this sample belongs to
+`Group` | which group this sample belongs to
+`Replicate` (optional) | which replicate this sample belongs to 
+
+## An Ultrasensitive Mechanism Regulates Influenza Virus-Induced Inflammation
+
+
+```{r}
+library(timecoursedata)
+data(shoemaker2015)
+head(shoemaker2015$meta)
+head(shoemaker2015$data)
+```
