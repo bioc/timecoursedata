@@ -5,6 +5,10 @@ Author: Nelle Varoquaux <nelle.varoquaux@gmail.com>
 Maintainer: Nelle Varoquaux <nelle.varoquaux@gmail.com>
 Description: This data package contains timecourse gene expression data sets from Shoemaker et al and Varoquaux et al
 Depends: R (>= 3.5)
+Suggests: testthat (>= 1.0.0),
+    knitr,
+    rmarkdown,
+    covr
 VignetteBuilder: knitr
 License: BSD 3-clause License + file LICENSE
 Encoding: UTF-8
