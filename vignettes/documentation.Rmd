@@ -39,6 +39,11 @@ column | description
 
 ## An Ultrasensitive Mechanism Regulates Influenza Virus-Induced Inflammation
 
+This dataset is a microarray time-course experiment, exposing mice to three
+different strains of influenza with varying doses. The authors of the
+experiment collected three replicates of lung tissue samples during 14
+unevenly-spaced time-points after infection, resulting in a dataset of 209
+samples.
 
 ```{r}
 library(timecoursedata)
