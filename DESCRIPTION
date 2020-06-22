@@ -1,0 +1,12 @@
+Package: timecoursedata
+Title: A data package for timecourse gene expression data sets
+Version: 0.0.0
+Author: Nelle Varoquaux <nelle.varoquaux@gmail.com>
+Maintainer: Nelle Varoquaux <nelle.varoquaux@gmail.com>
+Description: This data package contains timecourse gene expression data sets from Shoemaker et al and Varoquaux et al
+Depends: R (>= 3.5)
+VignetteBuilder: knitr
+License: BSD 3-clause License + file LICENSE
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.1.0
