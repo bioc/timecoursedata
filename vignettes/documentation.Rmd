@@ -7,8 +7,6 @@ vignette: >
       %\usepackage[UTF-8]{inputenc}
 ---
 
-# timecoursedata: Time course gene expression datasets
-
 ## Overview
 
 This package provides time course gene expression datasets. The data included
@@ -19,6 +17,9 @@ Overviw of the datasets included in timecoursedata:
 object | description
 ------- | ------------
 `shoemaker2015` | microarray data from influenza-exposed mice
+`varoquaux2019leaf` | RNA-seq from leaf samples of *S. bicolor* exposed to drought
+`varoquaux2019root` | RNA-seq from root samples of *S. bicolor* exposed to drought
+
 
 
 ## Data structure
@@ -28,7 +29,7 @@ Each datasets in this package are represented by:
 - a matrix containing the gene expression data
 - a data.frame containing the metadata associated with it
 
-The metadata contains the following information:
+The metadata contains at least the following information:
 
 column | description
 ----- | ----------
@@ -36,6 +37,7 @@ column | description
 `Timepoint` | which timepoints this sample belongs to
 `Group` | which group this sample belongs to
 `Replicate` (optional) | which replicate this sample belongs to 
+
 
 ## An Ultrasensitive Mechanism Regulates Influenza Virus-Induced Inflammation
 
@@ -50,4 +52,19 @@ library(timecoursedata)
 data(shoemaker2015)
 head(shoemaker2015$meta)
 head(shoemaker2015$data)
+```
+
+## Transcriptomic analysis of field-droughted sorghum from seedling to maturity reveals biotic and metabolic responses
+
+This pairs of datasets (`varoquaux2019leaf` and `varoquaux2019root`)
+corresponds to transcriptomic data from respectively leaf and root samples of
+*S. bicolor* exposed to droughts (pre-flowering and post-flowering drougt)
+from seedling to maturity. Samples were collected weekly during 15 weeks. 
+The data provided here is not normalized.
+
+```{r}
+data(varoquaux2019leaf)
+nrow(varoquaux2019leaf$data)
+ncol(varoquaux2019leaf$data)
+
 ```
