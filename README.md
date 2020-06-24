@@ -1,60 +1,36 @@
----
-title: "timecoursedata: Time course gene expression datasets"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteEngine{knitr::knitr}
-    %\VignetteIndexEntry{Installation}
-      %\usepackage[UTF-8]{inputenc}
----
+# timecoursedata
 
-## Overview
-
-This package provides time course gene expression datasets. The data included
-in the package and its processing is described below. 
-
-Overviw of the datasets included in timecoursedata:
-
-object | description
-------- | ------------
-`shoemaker2015` | microarray data from influenza-exposed mice
-`varoquaux2019leaf` | RNA-seq from leaf samples of *S. bicolor* exposed to drought
-`varoquaux2019root` | RNA-seq from root samples of *S. bicolor* exposed to drought
+`timecoursedata` contains gene expression timecourse datasets. You can check
+out the documentation online at
+[https://nellev.github.io/timecoursedata/](https://nellev.github.io/timecoursedata/).
+Learn more in `vignette("timecoursedata")` or `?build_site`.
 
 
+## Installation
 
-## Data structure
+Right now, `timecoursedata` is only available through GitHub with:
 
-Each datasets in this package are represented by:
-
-- a matrix containing the gene expression data
-- a data.frame containing the metadata associated with it
-
-The metadata contains at least the following information:
-
-column | description
------ | ----------
-`row.names` | name of the sample
-`Timepoint` | which timepoints this sample belongs to
-`Group` | which group this sample belongs to
-`Replicate` (optional) | which replicate this sample belongs to 
-
-
-## An Ultrasensitive Mechanism Regulates Influenza Virus-Induced Inflammation
-
-This dataset is a microarray time-course experiment, exposing mice to three
-different strains of influenza with varying doses. The authors of the
-experiment collected three replicates of lung tissue samples during 14
-unevenly-spaced time-points after infection, resulting in a dataset of 209
-samples.
-
-```{r}
-library(timecoursedata)
-data(shoemaker2015)
-head(shoemaker2015$meta)
-head(shoemaker2015$data)
+```R
+install.packages("devtools")
+devtools::install_github("NelleV/timecoursedata")
 ```
 
-If you use this dataset, please cite:
+## Usage
+
+Get started with `timecoursedata` with:
+
+```R
+library(timecoursedata)
+data(shoemaker2015)
+```
+
+This will load the Shoemaker et al data. For more information, [read our
+documentation here](https://nellev.github.io/timecoursedata/articles/documentation.html)
+
+
+## Citations
+
+If you use the dataset `shoemaker2015`, please cite:
 
 ```
 @article{shoemaker:ultrasensitive,
@@ -75,41 +51,8 @@ If you use this dataset, please cite:
 }
 ```
 
-    
-
-## Transcriptomic analysis of field-droughted sorghum from seedling to maturity reveals biotic and metabolic responses
-
-This pairs of datasets (`varoquaux2019leaf` and `varoquaux2019root`)
-corresponds to transcriptomic data from respectively leaf and root samples of
-*S. bicolor* exposed to droughts (pre-flowering and post-flowering drougt)
-from seedling to maturity. Samples were collected weekly during 15 weeks. 
-The data provided here is not normalized.
-
-```{r}
-data(varoquaux2019leaf)
-nrow(varoquaux2019leaf$data)
-ncol(varoquaux2019leaf$data)
-```
-
-The metadata associated to these datasets are more complete than the
-`shoemaker2015` one: it contains 69 fields in total. Amongst the most relevant
-are the following:
-
-column | description
------- | ------------
-`Block` | The block the plant was grown into.
-`Week` | Which week this sample was collected on.
-`Genotype` | RTx430 (pre-flowering tolerant) or BTx642 (stay-green postflowering resistant).
-`Condition` | Control, preflowering drought, or postflowering drought.
-`Day` | Which day this sample was collected on.
-`Row`| Which row this plant was grown on.
-`No.plants.pooled` | The number of unique plants collected to create this sample.
-`Plate` | Sequencing plate.
-
-For more information, consult the methods and supplementary methods of
-Varoquaux et al (2019).
-
-If you use these datasets, please cite:
+If you use the dataset `varoquaux2019leaf` or `varoquaux2019root`, please
+cite:
 
 ```
 @article{varoquaux:transcriptomic,
