@@ -1,7 +1,10 @@
 Package: timecoursedata
 Title: A data package for timecourse gene expression data sets
 Version: 0.0.0
-Author: Nelle Varoquaux <nelle.varoquaux@gmail.com>
+Authors@R: c(person("Elizabeth", "Purdom", email="epurdom@stat.berkeley.edu",
+		    role = c("aut")),
+	     person("Nelle", "Varoquaux", role=c("aut", "cre", "cht"),
+		    email="nelle.varoquaux@gmail.com"))
 Maintainer: Nelle Varoquaux <nelle.varoquaux@gmail.com>
 Description: This data package contains timecourse gene expression data sets from Shoemaker et al and Varoquaux et al
 Depends: R (>= 3.5)
