@@ -54,6 +54,29 @@ head(shoemaker2015$meta)
 head(shoemaker2015$data)
 ```
 
+If you use this dataset, please cite:
+
+```
+@article{shoemaker:ultrasensitive,
+    author={Shoemaker, J. E. AND Fukuyama, S. AND Eisfeld, A. J. AND Zhao,
+    Dongming AND Kawakami, Eiryo AND Sakabe, Saori AND Maemura, Tadashi AND Gorai,
+    Takeo AND Katsura, Hiroaki AND Muramoto, Yukiko AND Watanabe, Shinji AND
+    Watanabe, Tokiko AND Fuji, Ken AND Matsuoka, Yukiko AND Kitano, Hiroaki AND
+    Kawaoka, Yoshihiro},
+    isbn = {1553-7366},
+    issn = {15537374},
+    journal = {PLoS Pathogens},
+    number = {6},
+    pages = {1--25},
+    pmid = {26046528},
+    title = {{An Ultrasensitive Mechanism Regulates Influenza Virus-Induced Inflammation}},
+    volume = {11},
+    year = {2015},
+}
+```
+
+    
+
 ## Transcriptomic analysis of field-droughted sorghum from seedling to maturity reveals biotic and metabolic responses
 
 This pairs of datasets (`varoquaux2019leaf` and `varoquaux2019root`)
@@ -66,5 +89,41 @@ The data provided here is not normalized.
 data(varoquaux2019leaf)
 nrow(varoquaux2019leaf$data)
 ncol(varoquaux2019leaf$data)
+```
+
+The metadata associated to these datasets are more complete than the
+`shoemaker2015` one: it contains 69 fields in total. Amongst the most relevant
+are the following:
+
+column | description
+------ | ------------
+`Block` | The block the plant was grown into.
+`Week` | Which week this sample was collected on.
+`Genotype` | RTx430 (pre-flowering tolerant) or BTx642 (stay-green postflowering resistant).
+`Condition` | Control, preflowering drought, or postflowering drought.
+`Day` | Which day this sample was collected on.
+`Row`| Which row this plant was grown on.
+`No.plants.pooled` | The number of unique plants collected to create this sample.
+`Plate` | Sequencing plate.
+
+For more information, consult the methods and supplementary methods of
+Varoquaux et al (2019).
+
+If you use these datasets, please cite:
+
+```
+@article{varoquaux:transcriptomic,
+        author = {Varoquaux, N. and Cole, B. and Gao, C. and Pierroz, G. and Baker, C. R. and Patel, D. and Madera, M. and Jeffers, T. and Hollingsworth, J. and Sievert, J. and Yoshinaga, Y. and Owiti, J. A. and Singan, V. R. and DeGraaf, S. and Xu, L. and Blow, M. J. and Harrison, M. J. and Visel, A. and Jansson, C. and Niyogi, K. K. and Hutmacher, R. and Coleman-Derr, D. and O{\textquoteright}Malley, R. C. and Taylor, J. W. and Dahlberg, J. and Vogel, J. P. and Lemaux, P. G. and Purdom, E.},
+        title = {Transcriptomic analysis of field-droughted sorghum from seedling to maturity reveals biotic and metabolic responses},
+        elocation-id = {201907500},
+        year = {2019},
+        doi = {10.1073/pnas.1907500116},
+        publisher = {National Academy of Sciences},
+        abstract = {Understanding the molecular response of plants to drought is critical to efforts to improve agricultural yields under increasingly frequent droughts. We grew 2 cultivars of the naturally drought-tolerant food crop sorghum in the field under drought stress. We sequenced the mRNA from weekly samples of these plants, resulting in a molecular profile of drought response over the growing season. We find molecular differences in the 2 cultivars that help explain their differing tolerances to drought and evidence of a disruption in the plant{\textquoteright}s symbiosis with arbuscular mycorrhizal fungi. Our findings are of practical importance for agricultural breeding programs, while the resulting data are a resource for the plant and microbial communities for studying the dynamics of drought response.Drought is the most important environmental stress limiting crop yields. The C4 cereal sorghum [Sorghum bicolor (L.) Moench] is a critical food, forage, and emerging bioenergy crop that is notably drought-tolerant. We conducted a large-scale field experiment, imposing preflowering and postflowering drought stress on 2 genotypes of sorghum across a tightly resolved time series, from plant emergence to postanthesis, resulting in a dataset of nearly 400 transcriptomes. We observed a fast and global transcriptomic response in leaf and root tissues with clear temporal patterns, including modulation of well-known drought pathways. We also identified genotypic differences in core photosynthesis and reactive oxygen species scavenging pathways, highlighting possible mechanisms of drought tolerance and of the delayed senescence, characteristic of the stay-green phenotype. Finally, we discovered a large-scale depletion in the expression of genes critical to arbuscular mycorrhizal (AM) symbiosis, with a corresponding drop in AM fungal mass in the plants{\textquoteright} roots.},
+        issn = {0027-8424},
+        URL = {https://www.pnas.org/content/early/2019/12/04/1907500116},
+        eprint = {https://www.pnas.org/content/early/2019/12/04/1907500116.full.pdf},
+        journal = {Proceedings of the National Academy of Sciences}
+}
 
 ```
