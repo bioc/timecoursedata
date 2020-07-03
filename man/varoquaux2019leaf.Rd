@@ -42,8 +42,8 @@ The data provided is normalized data, where the leaf and root have
   separate normalization.
 
 \code{meta} is a data frame with rows corresponding to samples and
-  69 columns. These are the same across leaf and root, allowing for easy
-  reuse of code across the datasets:
+  and columns with meta data. These columns are the same across leaf and
+  root, allowing for easy reuse of code across the datasets:
 \describe{
   \item{Barcode}{Barcode of the sample, same as row name}
   \item{libraryName}{Internal Barcode given to the sample by the sequencing facility (JGI)}                                 
