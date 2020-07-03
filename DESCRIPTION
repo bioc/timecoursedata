@@ -6,7 +6,7 @@ Authors@R: c(person("Elizabeth", "Purdom", email="epurdom@stat.berkeley.edu",
 	     person("Nelle", "Varoquaux", role=c("aut", "cre"),
 		    email="nelle.varoquaux@gmail.com"))
 Description: This data package contains timecourse gene expression data sets from Shoemaker et al and Varoquaux et al
-Depends: R (>= 3.5)
+Depends: R (>= 4.0)
 Suggests: testthat (>= 1.0.0),
     knitr,
     rmarkdown,
@@ -16,4 +16,4 @@ License: BSD 3-clause License + file LICENSE
 Encoding: UTF-8
 LazyData: false
 RoxygenNote: 7.1.1
-biocViews: ExpressionData
+biocViews: ExpressionData, MicroarrayData, RNASeqData
