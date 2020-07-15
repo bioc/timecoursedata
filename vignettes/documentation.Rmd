@@ -3,7 +3,7 @@ title: "timecoursedata: Time course gene expression datasets"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteEngine{knitr::knitr}
-    %\VignetteIndexEntry{Installation}
+    %\VignetteIndexEntry{timecoursedata: Time course gene expression datasets}
       %\usepackage[UTF-8]{inputenc}
 ---
 

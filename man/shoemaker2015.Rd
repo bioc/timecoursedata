@@ -27,7 +27,7 @@ This is data from a micro-array time-course experiment, exposing
   (A/Kawasaki/UTK4/2009 [H1N1]), a mildly pathogenic virus from the 2009
   pandemic season (A/California/04/2009 [H1N1]), and a highly pathogenic H5N1
   avian influenza virus (A/Vietnam/1203/2004 [H5N1]. Mice were injected with
-  105 PFU of each virus. An adidtional 42 mice were injected with a lower
+  105 PFU of each virus. An additional 42 mice were injected with a lower
   dose of the Vietnam avian influenza virus (103 PFU).
 
 \code{data} is a data frame with 39544 rows corresponding to genes
