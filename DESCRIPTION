@@ -1,12 +1,13 @@
 Package: timecoursedata
-Title: A data package for timecourse gene expression data sets
+Title: A data package for timecourse RNA-seq and microarray gene expression data sets
 Version: 0.99.0
 Authors@R: c(person("Elizabeth", "Purdom", email="epurdom@stat.berkeley.edu",
 		    role = c("aut")),
 	     person("Nelle", "Varoquaux", role=c("aut", "cre"),
 		    email="nelle.varoquaux@gmail.com"))
-Description: This data package contains timecourse gene expression data sets from Shoemaker et al and Varoquaux et al
-Depends: R (>= 4.0)
+Description: This data package contains timecourse gene expression data sets from Shoemaker et al (microarray) and Varoquaux et al (RNAseq)
+Depends: R (>= 4.0),
+	 SummarizedExperiment
 Suggests: testthat (>= 1.0.0),
     knitr,
     rmarkdown,
