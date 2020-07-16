@@ -12,7 +12,7 @@ vignette: >
 This package provides time course gene expression datasets. The data included
 in the package and its processing is described below. 
 
-Overviw of the datasets included in timecoursedata:
+Overview of the datasets included in timecoursedata:
 
 object | description
 ------- | ------------
@@ -22,12 +22,22 @@ object | description
 
 
 
+
 ## Data structure
 
 Each datasets in this package are represented by:
 
 - a matrix containing the gene expression data
 - a data.frame containing the metadata associated with it
+
+All datasets can also be loaded as SummarizedExperiment objects using the
+following functions:
+
+name | matrix/data.frame | SummarizedExperiment
+---- | ----------- | -------------------------
+`shoemaker2015` | `data(shoemaker2015)` | `load_shoemaker2015()`
+`varoquaux2019leaf` | `data(varoquaux2019leaf)` | `load_varoquaux2019leaf()`
+`varoquaux2019root` | `data(varoquaux2019root)` | `load_varoquaux2019root()`
 
 The metadata contains at least the following information:
 
