@@ -6,6 +6,9 @@
 \usage{
 load_shoemaker2015()
 }
+\value{
+a \code{SummerizedExperiment} of the Shoemaker 2015 data
+}
 \description{
 See data(shoemaker2015) for a full description of the dataset and the
 metadata.
