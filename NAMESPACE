@@ -3,3 +3,4 @@
 export(load_shoemaker2015)
 export(load_varoquaux2019leaf)
 export(load_varoquaux2019root)
+import(SummarizedExperiment)

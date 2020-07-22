@@ -6,6 +6,7 @@
 #' @examples
 #' mice_timecourse_data = load_shoemaker2015()
 #' head(mice_timecourse_data)
+#' @import SummarizedExperiment
 #' @export
 load_shoemaker2015 = function(){
     data("shoemaker2015")
@@ -23,6 +24,7 @@ load_shoemaker2015 = function(){
 #' @examples
 #' sorghum_timecourse_data = load_varoquaux2019leaf()
 #' head(sorghum_timecourse_data)
+#' @import SummarizedExperiment
 #' @export
 load_varoquaux2019leaf = function(){
     data("varoquaux2019leaf")
@@ -39,6 +41,7 @@ load_varoquaux2019leaf = function(){
 #' @examples
 #' sorghum_timecourse_data = load_varoquaux2019root()
 #' head(sorghum_timecourse_data)
+#' @import SummarizedExperiment
 #' @export
 load_varoquaux2019root = function(){
     data("varoquaux2019root")
