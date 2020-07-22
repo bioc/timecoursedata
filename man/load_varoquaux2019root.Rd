@@ -6,6 +6,10 @@
 \usage{
 load_varoquaux2019root()
 }
+\value{
+à \code{SummerizedExperiment} of the root samples of Varoquaux et
+al.
+}
 \description{
 See data(varoquaux2019root) for a full description of the dataset and the
 metadata.

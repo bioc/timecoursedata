@@ -6,6 +6,10 @@
 \usage{
 load_varoquaux2019leaf()
 }
+\value{
+a \code{SummerizedExperiment} of the leaf samples of Varoquaux et
+al.
+}
 \description{
 See data(varoquaux2019leaf) for a full description of the dataset and the
 metadata.
