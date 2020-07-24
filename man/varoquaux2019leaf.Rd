@@ -25,7 +25,9 @@ This are two datasets from a mRNA-Seq time-course experiment,
   measuring gene expression across time in the plant sorghum. One dataset
   corresponds to the leaf of the plant (\code{varoquaux2019leaf}), the other
   to the root from the same sets of plants (\code{varoquaux2019leaf}). Each
-  sample sequenced is actually a pool of at least 10 plants.
+  sample sequenced is actually a pool of at least 10 plants. Note that leaf
+  and root samples were processed and sequenced as two separate batches.
+  Any comparison between the two datasets should be traded with care.
 
 \code{data} is a data frame with 34,211 rows corresponding to
   sorghum genes with

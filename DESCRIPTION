@@ -2,16 +2,24 @@ Package: timecoursedata
 Title: A data package for timecourse RNA-seq and microarray gene expression data sets
 Version: 0.99.13
 Authors@R: c(person("Elizabeth", "Purdom", email="epurdom@stat.berkeley.edu",
-		    role = c("aut")),
+		    role=c("aut"),
+		    comment=c("orcid"="https://orcid.org/0000-0001-9455-7990")),
 	     person("Nelle", "Varoquaux", role=c("aut", "cre"),
-		    email="nelle.varoquaux@gmail.com"))
-Description: This data package contains timecourse gene expression data sets from Shoemaker et al (microarray) and Varoquaux et al (RNAseq)
+		    email="nelle.varoquaux@gmail.com",
+		    comment=c(orcid="https://orcid.org/0000-0002-8748-6546")))
+Description: This data package contains timecourse gene expression data sets.
+	     The first dataset, from Shoemaker et al, consists of microarray
+	     samples from lung tissue of mice exposed to different influenzy
+	     strains from 14 timepoints. The two other datasets are leaf and
+	     root samples from sorghum crops exposed to pre- and
+	     post-flowering drought stress and a control condition, sampled
+	     across the plants lifetime. 
 Depends: R (>= 4.0),
 	 SummarizedExperiment
 Suggests: testthat (>= 1.0.0),
-    knitr,
-    rmarkdown,
-    covr
+          knitr,
+	  rmarkdown,
+	  covr
 VignetteBuilder: knitr
 License: BSD 3-clause License + file LICENSE
 Encoding: UTF-8
