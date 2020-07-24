@@ -43,7 +43,7 @@ load_varoquaux2019leaf = function(){
 #' See data(varoquaux2019root) for a full description of the dataset and the
 #' metadata.
 #'
-#' @return à \code{SummerizedExperiment} of the root samples of Varoquaux et
+#' @return \code{SummerizedExperiment} of the root samples of Varoquaux et
 #' al.
 #'
 #' @examples

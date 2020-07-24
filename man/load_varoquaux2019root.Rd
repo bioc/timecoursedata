@@ -7,7 +7,7 @@
 load_varoquaux2019root()
 }
 \value{
-à \code{SummerizedExperiment} of the root samples of Varoquaux et
+\code{SummerizedExperiment} of the root samples of Varoquaux et
 al.
 }
 \description{

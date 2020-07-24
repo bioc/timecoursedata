@@ -39,7 +39,9 @@ This is data from a micro-array time-course experiment, exposing
   \item{Group}{The treatment group of the sample. "C"=Control, "K"=Kawasaki
   strain, "M"=California strain, "VH"=Vietnam strain, "VL"=Vietnam at lower
   dosage (103 PFU).}
-  \item{Replicate}{Identifies the replicate -- each combination of treatment and timepoint was replicated three times (except for VH at timepoint 3, which has only 2 replicates).}
+  \item{Replicate}{Identifies the replicate -- each combination of treatment
+                   and timepoint was replicated three times (except for VH
+                   at timepoint 3, which has only 2 replicates).}
   \item{Timepoint}{Identifies the time passed (in days) since infection of the sample}
 }
 }
