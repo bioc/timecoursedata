@@ -26,6 +26,8 @@ load_shoemaker2015 = function(){
 #' See data(varoquaux2019leaf) or data(varoquaux2019root) for a full
 #' description of the dataset and the metadata.
 #'
+#' @param sample_type   {"leaf", "root"}, optional, default: leaf
+#'      Sets which sample to load.
 #' @return a \code{SummerizedExperiment} of the leaf or root samples of
 #' Varoquaux et al.
 #'

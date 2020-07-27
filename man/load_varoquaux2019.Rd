@@ -6,6 +6,10 @@
 \usage{
 load_varoquaux2019(sample_type = "leaf")
 }
+\arguments{
+\item{sample_type}{{"leaf", "root"}, optional, default: leaf
+Sets which sample to load.}
+}
 \value{
 a \code{SummerizedExperiment} of the leaf or root samples of
 Varoquaux et al.
