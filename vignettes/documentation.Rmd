@@ -22,7 +22,6 @@ object | description
 
 
 
-
 ## Data structure
 
 Each datasets in this package are represented by:
@@ -36,8 +35,8 @@ following functions:
 name | matrix/data.frame | SummarizedExperiment
 ---- | ----------- | -------------------------
 `shoemaker2015` | `data(shoemaker2015)` | `load_shoemaker2015()`
-`varoquaux2019leaf` | `data(varoquaux2019leaf)` | `load_varoquaux2019leaf()`
-`varoquaux2019root` | `data(varoquaux2019root)` | `load_varoquaux2019root()`
+`varoquaux2019leaf` | `data(varoquaux2019leaf)` | `load_varoquaux2019(sample_type="leaf")`
+`varoquaux2019root` | `data(varoquaux2019root)` | `load_varoquaux2019(sample_type="root")`
 
 The metadata contains at least the following information:
 

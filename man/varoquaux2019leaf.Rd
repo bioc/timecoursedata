@@ -31,17 +31,16 @@ This are two datasets from a mRNA-Seq time-course experiment,
 
 \code{data} is a data frame with 34,211 rows corresponding to
   sorghum genes with
-  (\href{https://phytozome.jgi.doe.gov/pz/portal.html#!info?alias=Org_Sbicolor}{Phytozome v3.0} gene ids). Root has 198 columns and leaf has 197 columns,
+  (\href{https://phytozome.jgi.doe.gov/pz/portal.html#!info?alias=Org_Sbicolor}{Phytozome
+  v3.0} gene ids). Root has 198 columns and leaf has 197 columns,
   corresponding to samples. The root and leaf samples are from the same
   plants, and have ids in the form of "0622162L05" or "0622162R05", with "L"
   corresponding to the leaf and "R" corresponding to the root sample. Some
   samples were removed for quality control reasons, resulting in slightly
   different numbers of samples between the leaf and root.
 
-The data provided is normalized data, where the leaf and root have
-  been normalized separately. While we have kept the datasets in the same
-  format, a simple merge of the two datasets could be problematic due to the
-  separate normalization.
+The data provided is the raw data. Note that leafs and roots were
+  sequenced as two different batches.
 
 \code{meta} is a data frame with rows corresponding to samples and
   and columns with meta data. These columns are the same across leaf and
