@@ -1,6 +1,6 @@
 ---
 title: "timecoursedata: Time course gene expression datasets"
-output: rmarkdown::html_vignette
+output: BiocStyle::html_document
 vignette: >
   %\VignetteEngine{knitr::knitr}
     %\VignetteIndexEntry{timecoursedata: Time course gene expression datasets}
@@ -22,7 +22,6 @@ object | description
 
 
 
-
 ## Data structure
 
 Each datasets in this package are represented by:
@@ -36,8 +35,8 @@ following functions:
 name | matrix/data.frame | SummarizedExperiment
 ---- | ----------- | -------------------------
 `shoemaker2015` | `data(shoemaker2015)` | `load_shoemaker2015()`
-`varoquaux2019leaf` | `data(varoquaux2019leaf)` | `load_varoquaux2019leaf()`
-`varoquaux2019root` | `data(varoquaux2019root)` | `load_varoquaux2019root()`
+`varoquaux2019leaf` | `data(varoquaux2019leaf)` | `load_varoquaux2019(sample_type="leaf")`
+`varoquaux2019root` | `data(varoquaux2019root)` | `load_varoquaux2019(sample_type="root")`
 
 The metadata contains at least the following information:
 
@@ -93,7 +92,9 @@ This pairs of datasets (`varoquaux2019leaf` and `varoquaux2019root`)
 corresponds to transcriptomic data from respectively leaf and root samples of
 *S. bicolor* exposed to droughts (pre-flowering and post-flowering drougt)
 from seedling to maturity. Samples were collected weekly during 15 weeks. 
-The data provided here is not normalized.
+The data provided here is not normalized. Please note that the root and leaf
+samples were processed and sequenced as two separate batches. Any comparison
+between the two datasets should thus be done with care.
 
 ```{r}
 data(varoquaux2019leaf)
