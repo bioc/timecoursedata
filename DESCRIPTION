@@ -1,6 +1,6 @@
 Package: timecoursedata
 Title: A data package for timecourse RNA-seq and microarray gene expression data sets
-Version: 1.8.0
+Version: 1.9.0
 Authors@R: c(person("Elizabeth", "Purdom", email="epurdom@stat.berkeley.edu",
 		    role=c("aut"),
 		    comment=c("orcid"="https://orcid.org/0000-0001-9455-7990")),
